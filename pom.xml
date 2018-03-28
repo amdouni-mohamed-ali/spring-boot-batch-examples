@@ -18,6 +18,7 @@
         <module>java-config-example</module>
         <module>java-config-example-1</module>
         <module>java-config-example-2</module>
+        <module>java-config-multiple-datasources</module>
     </modules>
     <packaging>pom</packaging>
 
