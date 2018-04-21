@@ -2,25 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="378339ed-dc82-45f9-9d61-d87331f0f611" name="Default" comment="add java-config-scheduler module">
-      <change beforePath="" afterPath="$PROJECT_DIR$/java-config-sheduler/java-config-sheduler.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/java-config-sheduler/pom.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/java-config-sheduler/src/main/java/org/spring/tutorial/examples/batch/BatchApplication.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/java-config-sheduler/src/main/java/org/spring/tutorial/examples/batch/config/BatchConfiguration.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/java-config-sheduler/src/main/java/org/spring/tutorial/examples/batch/config/SchedulerConfiguration.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/java-config-sheduler/src/main/java/org/spring/tutorial/examples/batch/processors/DataSourceProcessor.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/java-config-sheduler/src/main/java/org/spring/tutorial/examples/batch/readers/DataSourceReader.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/java-config-sheduler/src/main/java/org/spring/tutorial/examples/batch/writers/DataSourceWriter.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/java-config-sheduler/src/main/resources/application.properties" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__postgresql_postgresql_9_1_901_jdbc4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__postgresql_postgresql_9_1_901_1_jdbc4.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/java-config-example/src/main/java/org/spring/tutorial/examples/batch/BatchApplication.java" afterPath="$PROJECT_DIR$/java-config-example/src/main/java/org/spring/tutorial/examples/batch/BatchApplication.java" />
-      <change beforePath="$PROJECT_DIR$/java-config-multiple-datasources/src/main/java/org/spring/tutorial/examples/batch/config/EntityManagerConfig.java" afterPath="$PROJECT_DIR$/java-config-multiple-datasources/src/main/java/org/spring/tutorial/examples/batch/config/EntityManagerConfig.java" />
-      <change beforePath="$PROJECT_DIR$/java-config-multiple-datasources/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/java-config-multiple-datasources/src/main/resources/application.properties" />
-      <change beforePath="$PROJECT_DIR$/java-config-multiple-datasources/target/classes/application.properties" afterPath="$PROJECT_DIR$/java-config-multiple-datasources/target/classes/application.properties" />
-      <change beforePath="$PROJECT_DIR$/java-config-multiple-datasources/target/classes/org/spring/tutorial/examples/batch/config/EntityManagerConfig.class" afterPath="$PROJECT_DIR$/java-config-multiple-datasources/target/classes/org/spring/tutorial/examples/batch/config/EntityManagerConfig.class" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/java-config-example-1/target/classes/application.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java-config-example-1/target/classes/data-h2.sql" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java-config-example-1/target/classes/org/spring/tutorial/examples/batch/BatchApplication.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java-config-example-1/target/classes/org/spring/tutorial/examples/batch/config/BatchConfiguration.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java-config-example-1/target/classes/org/spring/tutorial/examples/batch/domain/User.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java-config-example-1/target/classes/org/spring/tutorial/examples/batch/processors/DataSourceProcessor.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java-config-example-1/target/classes/org/spring/tutorial/examples/batch/readers/DataSourceReader.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java-config-example-1/target/classes/org/spring/tutorial/examples/batch/repository/IUserRepository.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java-config-example-1/target/classes/org/spring/tutorial/examples/batch/writers/DataSourceWriter.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java-config-example-1/target/classes/schema-h2.sql" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java-config-example-2/target/classes/org/spring/tutorial/examples/batch/BatchApplication.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java-config-example-2/target/classes/org/spring/tutorial/examples/batch/config/BatchConfiguration.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java-config-example-2/target/classes/org/spring/tutorial/examples/batch/domain/User.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java-config-example-2/target/classes/org/spring/tutorial/examples/batch/listeners/JobPlanningListener.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java-config-example-2/target/classes/org/spring/tutorial/examples/batch/listeners/StepListener.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java-config-example-2/target/classes/org/spring/tutorial/examples/batch/tasklets/ToUpperCaseTasklet.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java-config-multiple-datasources/target/classes/application.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java-config-multiple-datasources/target/classes/org/spring/tutorial/examples/batch/BatchApplication.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java-config-multiple-datasources/target/classes/org/spring/tutorial/examples/batch/config/BatchDataSourceConfig.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java-config-multiple-datasources/target/classes/org/spring/tutorial/examples/batch/config/BatchJobsConfiguration.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java-config-multiple-datasources/target/classes/org/spring/tutorial/examples/batch/config/EntityManagerConfig.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java-config-multiple-datasources/target/classes/org/spring/tutorial/examples/batch/domain/User.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java-config-multiple-datasources/target/classes/org/spring/tutorial/examples/batch/processors/DataSourceProcessor.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java-config-multiple-datasources/target/classes/org/spring/tutorial/examples/batch/readers/DataSourceReader.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java-config-multiple-datasources/target/classes/org/spring/tutorial/examples/batch/repository/IUserRepository.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java-config-multiple-datasources/target/classes/org/spring/tutorial/examples/batch/writers/DataSourceWriter.class" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -38,34 +48,225 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SchedulerConfiguration.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java-config-sheduler/src/main/java/org/spring/tutorial/examples/batch/config/SchedulerConfiguration.java">
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java-config-multiple-datasources/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="61" column="14" lean-forward="false" selection-start-line="61" selection-start-column="14" selection-end-line="61" selection-end-column="14" />
+            <state relative-caret-position="153">
+              <caret line="13" column="52" lean-forward="false" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java-config-multiple-datasources/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="28" column="52" lean-forward="false" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="schema-postgres.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java-config-multiple-datasources/src/main/resources/schema-postgres.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="2" lean-forward="false" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Assert.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.3.14.RELEASE/spring-core-4.3.14.RELEASE.jar!/org/springframework/util/Assert.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <marker date="1518858975140" expanded="false" signature="0:104" ph="/.../" />
+                <marker date="1518858975140" expanded="false" signature="148:191" ph="..." />
+                <marker date="1518858975140" expanded="true" signature="244:251" ph="{}" />
+                <marker date="1518858975140" expanded="true" signature="318:416" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="422:440" ph="/**...*/" />
+                <marker date="1518858975140" expanded="true" signature="506:598" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="666:767" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="773:791" ph="/**...*/" />
+                <marker date="1518858975140" expanded="true" signature="858:946" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="1009:1113" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="1119:1137" ph="/**...*/" />
+                <marker date="1518858975140" expanded="true" signature="1199:1287" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="1351:1455" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="1461:1479" ph="/**...*/" />
+                <marker date="1518858975140" expanded="true" signature="1542:1645" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="1709:1827" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="1833:1851" ph="/**...*/" />
+                <marker date="1518858975140" expanded="true" signature="1914:2038" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="2100:2216" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="2222:2240" ph="/**...*/" />
+                <marker date="1518858975140" expanded="true" signature="2301:2429" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="2524:2721" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="2727:2745" ph="/**...*/" />
+                <marker date="1518858975140" expanded="true" signature="2839:2991" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="3057:3173" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="3179:3197" ph="/**...*/" />
+                <marker date="1518858975140" expanded="true" signature="3262:3383" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="3455:3809" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="3815:3833" ph="/**...*/" />
+                <marker date="1518858975140" expanded="true" signature="3904:4012" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="4088:4213" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="4219:4237" ph="/**...*/" />
+                <marker date="1518858975140" expanded="true" signature="4312:4443" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="4508:4626" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="4632:4650" ph="/**...*/" />
+                <marker date="1518858975140" expanded="true" signature="4714:4831" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="4912:5085" ph="{...}" />
+                <marker date="1518858975140" expanded="false" signature="5149:5160" ph=" { " />
+                <marker date="1518858975140" expanded="false" signature="5188:5194" ph=" }" />
+                <marker date="1518858975140" expanded="true" signature="5286:5515" ph="{...}" />
+                <marker date="1518858975140" expanded="false" signature="5590:5601" ph=" { " />
+                <marker date="1518858975140" expanded="false" signature="5638:5644" ph=" }" />
+                <marker date="1518858975140" expanded="true" signature="5729:6340" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="6438:6949" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="7008:7112" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="7189:7261" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java-config-multiple-datasources/src/main/resources/application.properties">
+      <file leaf-file-name="ClassUtils.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.3.14.RELEASE/spring-core-4.3.14.RELEASE.jar!/org/springframework/util/ClassUtils.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="57" />
-              <folding />
+            <state relative-caret-position="119">
+              <caret line="555" column="0" lean-forward="false" selection-start-line="555" selection-start-column="0" selection-end-line="555" selection-end-column="0" />
+              <folding>
+                <marker date="1518858975140" expanded="false" signature="0:104" ph="/.../" />
+                <marker date="1518858975140" expanded="false" signature="148:643" ph="..." />
+                <marker date="1518858975140" expanded="true" signature="1543:1550" ph="{}" />
+                <marker date="1518858975140" expanded="true" signature="1622:1868" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="1924:2420" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="2515:2921" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="3040:5131" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="5252:5658" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="5726:5909" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="5990:6152" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="6211:6331" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="6389:6666" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="6747:7489" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="7547:7976" ph="{...}" />
+                <marker date="1518858975140" expanded="false" signature="8031:8042" ph=" { " />
+                <marker date="1518858975140" expanded="false" signature="8087:8093" ph=" }" />
+                <marker date="1518858975140" expanded="true" signature="8159:8401" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="8461:8688" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="8746:8858" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="8920:9132" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="9192:9340" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="9409:9669" ph="{...}" />
+                <marker date="1518858975140" expanded="false" signature="9733:9744" ph=" { " />
+                <marker date="1518858975140" expanded="false" signature="9795:9801" ph=" }" />
+                <marker date="1518858975140" expanded="true" signature="9882:10052" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="10112:10884" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="10961:11152" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="11232:11308" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="11410:11624" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="11718:11801" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="11894:13151" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="13255:14205" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="14286:15227" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="15318:16239" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="16325:17128" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="17189:17347" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="17412:17507" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="17587:17902" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="17995:18364" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="18427:18550" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="18615:18744" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="18805:18943" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="19011:19155" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="19228:19404" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="19481:20290" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="20365:20518" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="20597:20723" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="20799:20916" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="21009:21242" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="21312:21742" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="21806:21884" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="21960:22466" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="22543:22652" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="22717:22849" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="22921:22995" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="23092:23241" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="23314:23451" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="23531:23610" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="23715:24450" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="24552:24689" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="24776:25407" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="25486:25818" ph="{...}" />
+                <marker date="1518858975140" expanded="false" signature="25873:25884" ph=" { " />
+                <marker date="1518858975140" expanded="false" signature="25928:25934" ph=" }" />
+                <marker date="1518858975140" expanded="true" signature="25996:26075" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="26143:26212" ph="{...}" />
+                <marker date="1518858975140" expanded="true" signature="26225:28073" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java-config-multiple-datasources/src/main/java/org/spring/tutorial/examples/batch/domain/User.java">
+      <file leaf-file-name="DefaultPersistenceUnitManager.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/4.3.14.RELEASE/spring-orm-4.3.14.RELEASE.jar!/org/springframework/orm/jpa/persistenceunit/DefaultPersistenceUnitManager.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-              <folding />
+            <state relative-caret-position="181">
+              <caret line="256" column="33" lean-forward="false" selection-start-line="256" selection-start-column="33" selection-end-line="256" selection-end-column="33" />
+              <folding>
+                <marker date="1522182296625" expanded="false" signature="0:104" ph="/.../" />
+                <marker date="1522182296625" expanded="false" signature="167:2187" ph="..." />
+                <marker date="1522182296625" expanded="true" signature="4046:4053" ph="{}" />
+                <marker date="1522182296625" expanded="true" signature="4128:4212" ph="{...}" />
+                <marker date="1522182296625" expanded="true" signature="4292:4363" ph="{...}" />
+                <marker date="1522182296625" expanded="true" signature="4462:4555" ph="{...}" />
+                <marker date="1522182296625" expanded="true" signature="4638:4715" ph="{...}" />
+                <marker date="1522182296625" expanded="false" signature="4776:4787" ph=" { " />
+                <marker date="1522182296625" expanded="false" signature="4824:4830" ph=" }" />
+                <marker date="1522182296625" expanded="false" signature="4895:4906" ph=" { " />
+                <marker date="1522182296625" expanded="false" signature="4947:4953" ph=" }" />
+                <marker date="1522182296625" expanded="false" signature="5022:5033" ph=" { " />
+                <marker date="1522182296625" expanded="false" signature="5072:5078" ph=" }" />
+                <marker date="1522182296625" expanded="false" signature="5144:5155" ph=" { " />
+                <marker date="1522182296625" expanded="false" signature="5192:5198" ph=" }" />
+                <marker date="1522182296625" expanded="true" signature="5268:5345" ph="{...}" />
+                <marker date="1522182296625" expanded="true" signature="5418:5551" ph="{...}" />
+                <marker date="1522182296625" expanded="false" signature="5602:5613" ph=" { " />
+                <marker date="1522182296625" expanded="false" signature="5642:5648" ph=" }" />
+                <marker date="1522182296625" expanded="false" signature="5716:5727" ph=" { " />
+                <marker date="1522182296625" expanded="false" signature="5770:5776" ph=" }" />
+                <marker date="1522182296625" expanded="false" signature="5822:5833" ph=" { " />
+                <marker date="1522182296625" expanded="false" signature="5863:5869" ph=" }" />
+                <marker date="1522182296625" expanded="true" signature="5944:6009" ph="{...}" />
+                <marker date="1522182296625" expanded="false" signature="6058:6069" ph=" { " />
+                <marker date="1522182296625" expanded="false" signature="6102:6108" ph=" }" />
+                <marker date="1522182296625" expanded="true" signature="6207:6275" ph="{...}" />
+                <marker date="1522182296625" expanded="true" signature="6354:6412" ph="{...}" />
+                <marker date="1522182296625" expanded="false" signature="6478:6489" ph=" { " />
+                <marker date="1522182296625" expanded="false" signature="6526:6532" ph=" }" />
+                <marker date="1522182296625" expanded="false" signature="6579:6590" ph=" { " />
+                <marker date="1522182296625" expanded="false" signature="6617:6623" ph=" }" />
+                <marker date="1522182296625" expanded="true" signature="6690:6801" ph="{...}" />
+                <marker date="1522182296625" expanded="true" signature="6840:7123" ph="{...}" />
+                <marker date="1522182296625" expanded="true" signature="7171:9103" ph="{...}" />
+                <marker date="1522182296625" expanded="true" signature="9176:10548" ph="{...}" />
+                <marker date="1522182296625" expanded="true" signature="10622:14002" ph="{...}" />
+                <marker date="1522182296625" expanded="true" signature="14117:14422" ph="{...}" />
+                <marker date="1522182296625" expanded="true" signature="14481:14992" ph="{...}" />
+                <marker date="1522182296625" expanded="true" signature="15052:15541" ph="{...}" />
+                <marker date="1522182296625" expanded="true" signature="15641:15803" ph="{...}" />
+                <marker date="1522182296625" expanded="true" signature="15887:16360" ph="{...}" />
+                <marker date="1522182296625" expanded="false" signature="16418:16429" ph=" { " />
+                <marker date="1522182296625" expanded="false" signature="16442:16448" ph=" }" />
+                <marker date="1522182296625" expanded="true" signature="16516:17292" ph="{...}" />
+                <marker date="1522182296625" expanded="true" signature="17379:17936" ph="{...}" />
+                <marker date="1522182296625" expanded="true" signature="17949:18548" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -73,18 +274,18 @@
       <file leaf-file-name="BatchApplication.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/java-config-multiple-datasources/src/main/java/org/spring/tutorial/examples/batch/BatchApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="163">
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BatchConfiguration.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/java-config-sheduler/src/main/java/org/spring/tutorial/examples/batch/config/BatchConfiguration.java">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="9" column="82" lean-forward="false" selection-start-line="9" selection-start-column="82" selection-end-line="9" selection-end-column="82" />
+            <state relative-caret-position="34">
+              <caret line="2" column="8" lean-forward="false" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -93,51 +294,21 @@
       <file leaf-file-name="EntityManagerConfig.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/java-config-multiple-datasources/src/main/java/org/spring/tutorial/examples/batch/config/EntityManagerConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+            <state relative-caret-position="141">
+              <caret line="46" column="60" lean-forward="false" selection-start-line="46" selection-start-column="60" selection-end-line="46" selection-end-column="60" />
               <folding>
-                <element signature="e#1426#1427#0" expanded="true" />
-                <element signature="e#1483#1484#0" expanded="true" />
+                <element signature="e#1427#1428#0" expanded="true" />
+                <element signature="e#1484#1485#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java-config-sheduler/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DataSourceWriter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java-config-sheduler/src/main/java/org/spring/tutorial/examples/batch/writers/DataSourceWriter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="9" column="46" lean-forward="false" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BatchDataSourceConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java-config-multiple-datasources/src/main/java/org/spring/tutorial/examples/batch/config/BatchDataSourceConfig.java">
+      <file leaf-file-name="BatchApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java-config-sheduler/src/main/java/org/spring/tutorial/examples/batch/BatchApplication.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BatchJobsConfiguration.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java-config-multiple-datasources/src/main/java/org/spring/tutorial/examples/batch/config/BatchJobsConfiguration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="7" column="40" lean-forward="false" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -193,7 +364,6 @@
         <option value="$PROJECT_DIR$/java-config-example-2/src/main/java/org/spring/tutorial/examples/batch/listeners/StepListener.java" />
         <option value="$PROJECT_DIR$/java-config-example-2/src/main/java/org/spring/tutorial/examples/batch/config/BatchConfiguration.java" />
         <option value="$PROJECT_DIR$/java-config-example-1/src/main/java/org/spring/tutorial/examples/batch/readers/DataSourceReader.java" />
-        <option value="$PROJECT_DIR$/java-config-multiple-datasources/pom.xml" />
         <option value="$PROJECT_DIR$/java-config-multiple-datasources/src/main/java/org/spring/tutorial/examples/batch/config/BatchDataSourceConfig.java" />
         <option value="$PROJECT_DIR$/java-config-multiple-datasources/src/main/java/org/spring/tutorial/examples/batch/writers/DataSourceWriter.java" />
         <option value="$PROJECT_DIR$/java-config-multiple-datasources/src/main/java/org/spring/tutorial/examples/batch/processors/DataSourceProcessor.java" />
@@ -207,9 +377,12 @@
         <option value="$PROJECT_DIR$/java-config-sheduler/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/java-config-sheduler/src/main/java/org/spring/tutorial/examples/batch/readers/DataSourceReader.java" />
         <option value="$PROJECT_DIR$/java-config-sheduler/src/main/java/org/spring/tutorial/examples/batch/config/SchedulerConfiguration.java" />
-        <option value="$PROJECT_DIR$/java-config-multiple-datasources/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/java-config-multiple-datasources/src/main/java/org/spring/tutorial/examples/batch/config/EntityManagerConfig.java" />
         <option value="$PROJECT_DIR$/java-config-sheduler/src/main/java/org/spring/tutorial/examples/batch/config/BatchConfiguration.java" />
+        <option value="$PROJECT_DIR$/java-config-multiple-datasources/src/main/java/org/spring/tutorial/examples/batch/config/EntityManagerConfig.java" />
+        <option value="$PROJECT_DIR$/java-config-multiple-datasources/src/main/resources/schema-postgres.sql" />
+        <option value="$PROJECT_DIR$/java-config-multiple-datasources/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/java-config-multiple-datasources/pom.xml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -437,12 +610,9 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Spring Za3im\spring projects examples\spring-boot-batch-examples\java-config-sheduler\src\main\java\org\spring\tutorial\examples\batch" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Spring Za3im\spring projects examples\spring-boot-batch-examples\java-config-multiple-datasources\src\main\resources" />
-      <recent name="E:\Spring Za3im\spring projects examples\spring-boot-batch-examples\java-config-example-2\src\main\java\org\spring\tutorial\examples\batch\listeners" />
-      <recent name="E:\Spring Za3im\spring projects examples\spring-boot-batch-examples\java-config-example-1\src\main\java" />
-      <recent name="E:\Spring Za3im\spring projects examples\spring-boot-batch-examples\java-config-example\src\main\java\org\spring\tutorial\examples\batch" />
+      <recent name="E:\Spring Za3im\spring projects examples\spring-boot-batch-examples\java-config-multiple-datasources\src\test" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.spring.tutorial.examples.batch.config" />
@@ -451,9 +621,12 @@
       <recent name="org.spring.tutorial.examples.batch.readers" />
       <recent name="org.spring.tutorial.examples.batch.repository" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Spring Za3im\spring projects examples\spring-boot-batch-examples\java-config-multiple-datasources\src\main\resources" />
-      <recent name="E:\Spring Za3im\spring projects examples\spring-boot-batch-examples\java-config-multiple-datasources\src\test" />
+      <recent name="E:\Spring Za3im\spring projects examples\spring-boot-batch-examples\java-config-sheduler\src\main\java\org\spring\tutorial\examples\batch" />
+      <recent name="E:\Spring Za3im\spring projects examples\spring-boot-batch-examples\java-config-example-2\src\main\java\org\spring\tutorial\examples\batch\listeners" />
+      <recent name="E:\Spring Za3im\spring projects examples\spring-boot-batch-examples\java-config-example-1\src\main\java" />
+      <recent name="E:\Spring Za3im\spring projects examples\spring-boot-batch-examples\java-config-example\src\main\java\org\spring\tutorial\examples\batch" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -681,6 +854,21 @@
       <option name="presentableId" value="Default" />
       <updated>1522177499120</updated>
     </task>
+    <task id="LOCAL-00001" summary="add java-config-scheduler module">
+      <created>1524315297645</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1524315297645</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add postgres schema configuration">
+      <created>1524340789142</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1524340789143</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -688,15 +876,15 @@
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4857595" sideWeight="0.38579795" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39240506" sideWeight="0.614202" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39240506" sideWeight="0.614202" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32503662" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32284042" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Learn" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -714,8 +902,14 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="add java-config-scheduler module" />
-    <option name="LAST_COMMIT_MESSAGE" value="add java-config-scheduler module" />
+    <MESSAGE value="add postgres schema configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="add postgres schema configuration" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -728,7 +922,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/java-config-multiple-datasources/src/main/java/org/spring/tutorial/examples/batch/config/EntityManagerConfig.java</url>
-          <line>39</line>
+          <line>40</line>
           <properties />
           <option name="timeStamp" value="15" />
         </line-breakpoint>
@@ -768,35 +962,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/java-config-example-1/src/main/java/batch/config/BatchConfiguration.java" />
-    <entry file="file://$PROJECT_DIR$/java-config-example-1/src/main/java/org/spring/tutorial/examples/batch/domain/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="16" column="47" lean-forward="false" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java-config-example-1/src/main/java/org/spring/tutorial/examples/batch/repository/IUserRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java-config-example-1/src/main/java/org/spring/tutorial/examples/batch/writers/DataSourceWriter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="15" column="35" lean-forward="false" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java-config-example-1/src/main/java/org/spring/tutorial/examples/batch/processors/DataSourceProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="17" column="9" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="17" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/batch/spring-batch-core/3.0.8.RELEASE/spring-batch-core-3.0.8.RELEASE.jar!/org/springframework/batch/core/StepListener.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -879,13 +1044,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="33" column="34" lean-forward="false" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java-config-multiple-datasources/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="34" column="21" lean-forward="false" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -1025,7 +1183,7 @@
         <state relative-caret-position="102">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1035,7 +1193,7 @@
         <state relative-caret-position="32">
           <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1045,18 +1203,8 @@
         <state relative-caret-position="102">
           <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
           <folding>
-            <element signature="e#743#744#0" expanded="true" />
-            <element signature="e#810#811#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java-config-sheduler/src/main/java/org/spring/tutorial/examples/batch/BatchApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#741#742#0" expanded="false" />
+            <element signature="e#808#809#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1066,7 +1214,7 @@
         <state relative-caret-position="268">
           <caret line="61" column="14" lean-forward="false" selection-start-line="61" selection-start-column="14" selection-end-line="61" selection-end-column="14" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1074,7 +1222,7 @@
     <entry file="file://$PROJECT_DIR$/java-config-multiple-datasources/src/main/java/org/spring/tutorial/examples/batch/config/BatchJobsConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1092,33 +1240,6 @@
         <state relative-caret-position="85">
           <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java-config-multiple-datasources/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java-config-multiple-datasources/src/main/java/org/spring/tutorial/examples/batch/BatchApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java-config-multiple-datasources/src/main/java/org/spring/tutorial/examples/batch/config/EntityManagerConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-          <folding>
-            <element signature="e#1426#1427#0" expanded="true" />
-            <element signature="e#1483#1484#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1148,8 +1269,254 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/java-config-sheduler/src/main/java/org/spring/tutorial/examples/batch/config/BatchConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="9" column="82" lean-forward="false" selection-start-line="9" selection-start-column="82" selection-end-line="9" selection-end-column="82" />
+        <state relative-caret-position="119">
+          <caret line="7" column="35" lean-forward="false" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-config-sheduler/src/main/java/org/spring/tutorial/examples/batch/BatchApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="40" lean-forward="false" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.3.14.RELEASE/spring-core-4.3.14.RELEASE.jar!/org/springframework/util/Assert.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding>
+            <marker date="1518858975140" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1518858975140" expanded="false" signature="148:191" ph="..." />
+            <marker date="1518858975140" expanded="true" signature="244:251" ph="{}" />
+            <marker date="1518858975140" expanded="true" signature="318:416" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="422:440" ph="/**...*/" />
+            <marker date="1518858975140" expanded="true" signature="506:598" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="666:767" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="773:791" ph="/**...*/" />
+            <marker date="1518858975140" expanded="true" signature="858:946" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="1009:1113" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="1119:1137" ph="/**...*/" />
+            <marker date="1518858975140" expanded="true" signature="1199:1287" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="1351:1455" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="1461:1479" ph="/**...*/" />
+            <marker date="1518858975140" expanded="true" signature="1542:1645" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="1709:1827" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="1833:1851" ph="/**...*/" />
+            <marker date="1518858975140" expanded="true" signature="1914:2038" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="2100:2216" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="2222:2240" ph="/**...*/" />
+            <marker date="1518858975140" expanded="true" signature="2301:2429" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="2524:2721" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="2727:2745" ph="/**...*/" />
+            <marker date="1518858975140" expanded="true" signature="2839:2991" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="3057:3173" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="3179:3197" ph="/**...*/" />
+            <marker date="1518858975140" expanded="true" signature="3262:3383" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="3455:3809" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="3815:3833" ph="/**...*/" />
+            <marker date="1518858975140" expanded="true" signature="3904:4012" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="4088:4213" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="4219:4237" ph="/**...*/" />
+            <marker date="1518858975140" expanded="true" signature="4312:4443" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="4508:4626" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="4632:4650" ph="/**...*/" />
+            <marker date="1518858975140" expanded="true" signature="4714:4831" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="4912:5085" ph="{...}" />
+            <marker date="1518858975140" expanded="false" signature="5149:5160" ph=" { " />
+            <marker date="1518858975140" expanded="false" signature="5188:5194" ph=" }" />
+            <marker date="1518858975140" expanded="true" signature="5286:5515" ph="{...}" />
+            <marker date="1518858975140" expanded="false" signature="5590:5601" ph=" { " />
+            <marker date="1518858975140" expanded="false" signature="5638:5644" ph=" }" />
+            <marker date="1518858975140" expanded="true" signature="5729:6340" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="6438:6949" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="7008:7112" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="7189:7261" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.3.14.RELEASE/spring-core-4.3.14.RELEASE.jar!/org/springframework/util/ClassUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="555" column="0" lean-forward="false" selection-start-line="555" selection-start-column="0" selection-end-line="555" selection-end-column="0" />
+          <folding>
+            <marker date="1518858975140" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1518858975140" expanded="false" signature="148:643" ph="..." />
+            <marker date="1518858975140" expanded="true" signature="1543:1550" ph="{}" />
+            <marker date="1518858975140" expanded="true" signature="1622:1868" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="1924:2420" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="2515:2921" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="3040:5131" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="5252:5658" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="5726:5909" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="5990:6152" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="6211:6331" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="6389:6666" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="6747:7489" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="7547:7976" ph="{...}" />
+            <marker date="1518858975140" expanded="false" signature="8031:8042" ph=" { " />
+            <marker date="1518858975140" expanded="false" signature="8087:8093" ph=" }" />
+            <marker date="1518858975140" expanded="true" signature="8159:8401" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="8461:8688" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="8746:8858" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="8920:9132" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="9192:9340" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="9409:9669" ph="{...}" />
+            <marker date="1518858975140" expanded="false" signature="9733:9744" ph=" { " />
+            <marker date="1518858975140" expanded="false" signature="9795:9801" ph=" }" />
+            <marker date="1518858975140" expanded="true" signature="9882:10052" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="10112:10884" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="10961:11152" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="11232:11308" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="11410:11624" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="11718:11801" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="11894:13151" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="13255:14205" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="14286:15227" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="15318:16239" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="16325:17128" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="17189:17347" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="17412:17507" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="17587:17902" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="17995:18364" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="18427:18550" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="18615:18744" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="18805:18943" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="19011:19155" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="19228:19404" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="19481:20290" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="20365:20518" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="20597:20723" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="20799:20916" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="21009:21242" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="21312:21742" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="21806:21884" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="21960:22466" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="22543:22652" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="22717:22849" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="22921:22995" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="23092:23241" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="23314:23451" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="23531:23610" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="23715:24450" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="24552:24689" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="24776:25407" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="25486:25818" ph="{...}" />
+            <marker date="1518858975140" expanded="false" signature="25873:25884" ph=" { " />
+            <marker date="1518858975140" expanded="false" signature="25928:25934" ph=" }" />
+            <marker date="1518858975140" expanded="true" signature="25996:26075" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="26143:26212" ph="{...}" />
+            <marker date="1518858975140" expanded="true" signature="26225:28073" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/4.3.14.RELEASE/spring-orm-4.3.14.RELEASE.jar!/org/springframework/orm/jpa/persistenceunit/DefaultPersistenceUnitManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="256" column="33" lean-forward="false" selection-start-line="256" selection-start-column="33" selection-end-line="256" selection-end-column="33" />
+          <folding>
+            <marker date="1522182296625" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1522182296625" expanded="false" signature="167:2187" ph="..." />
+            <marker date="1522182296625" expanded="true" signature="4046:4053" ph="{}" />
+            <marker date="1522182296625" expanded="true" signature="4128:4212" ph="{...}" />
+            <marker date="1522182296625" expanded="true" signature="4292:4363" ph="{...}" />
+            <marker date="1522182296625" expanded="true" signature="4462:4555" ph="{...}" />
+            <marker date="1522182296625" expanded="true" signature="4638:4715" ph="{...}" />
+            <marker date="1522182296625" expanded="false" signature="4776:4787" ph=" { " />
+            <marker date="1522182296625" expanded="false" signature="4824:4830" ph=" }" />
+            <marker date="1522182296625" expanded="false" signature="4895:4906" ph=" { " />
+            <marker date="1522182296625" expanded="false" signature="4947:4953" ph=" }" />
+            <marker date="1522182296625" expanded="false" signature="5022:5033" ph=" { " />
+            <marker date="1522182296625" expanded="false" signature="5072:5078" ph=" }" />
+            <marker date="1522182296625" expanded="false" signature="5144:5155" ph=" { " />
+            <marker date="1522182296625" expanded="false" signature="5192:5198" ph=" }" />
+            <marker date="1522182296625" expanded="true" signature="5268:5345" ph="{...}" />
+            <marker date="1522182296625" expanded="true" signature="5418:5551" ph="{...}" />
+            <marker date="1522182296625" expanded="false" signature="5602:5613" ph=" { " />
+            <marker date="1522182296625" expanded="false" signature="5642:5648" ph=" }" />
+            <marker date="1522182296625" expanded="false" signature="5716:5727" ph=" { " />
+            <marker date="1522182296625" expanded="false" signature="5770:5776" ph=" }" />
+            <marker date="1522182296625" expanded="false" signature="5822:5833" ph=" { " />
+            <marker date="1522182296625" expanded="false" signature="5863:5869" ph=" }" />
+            <marker date="1522182296625" expanded="true" signature="5944:6009" ph="{...}" />
+            <marker date="1522182296625" expanded="false" signature="6058:6069" ph=" { " />
+            <marker date="1522182296625" expanded="false" signature="6102:6108" ph=" }" />
+            <marker date="1522182296625" expanded="true" signature="6207:6275" ph="{...}" />
+            <marker date="1522182296625" expanded="true" signature="6354:6412" ph="{...}" />
+            <marker date="1522182296625" expanded="false" signature="6478:6489" ph=" { " />
+            <marker date="1522182296625" expanded="false" signature="6526:6532" ph=" }" />
+            <marker date="1522182296625" expanded="false" signature="6579:6590" ph=" { " />
+            <marker date="1522182296625" expanded="false" signature="6617:6623" ph=" }" />
+            <marker date="1522182296625" expanded="true" signature="6690:6801" ph="{...}" />
+            <marker date="1522182296625" expanded="true" signature="6840:7123" ph="{...}" />
+            <marker date="1522182296625" expanded="true" signature="7171:9103" ph="{...}" />
+            <marker date="1522182296625" expanded="true" signature="9176:10548" ph="{...}" />
+            <marker date="1522182296625" expanded="true" signature="10622:14002" ph="{...}" />
+            <marker date="1522182296625" expanded="true" signature="14117:14422" ph="{...}" />
+            <marker date="1522182296625" expanded="true" signature="14481:14992" ph="{...}" />
+            <marker date="1522182296625" expanded="true" signature="15052:15541" ph="{...}" />
+            <marker date="1522182296625" expanded="true" signature="15641:15803" ph="{...}" />
+            <marker date="1522182296625" expanded="true" signature="15887:16360" ph="{...}" />
+            <marker date="1522182296625" expanded="false" signature="16418:16429" ph=" { " />
+            <marker date="1522182296625" expanded="false" signature="16442:16448" ph=" }" />
+            <marker date="1522182296625" expanded="true" signature="16516:17292" ph="{...}" />
+            <marker date="1522182296625" expanded="true" signature="17379:17936" ph="{...}" />
+            <marker date="1522182296625" expanded="true" signature="17949:18548" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-config-multiple-datasources/src/main/java/org/spring/tutorial/examples/batch/config/EntityManagerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="46" column="60" lean-forward="false" selection-start-line="46" selection-start-column="60" selection-end-line="46" selection-end-column="60" />
+          <folding>
+            <element signature="e#1427#1428#0" expanded="true" />
+            <element signature="e#1484#1485#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-config-multiple-datasources/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="28" column="52" lean-forward="false" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-config-multiple-datasources/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="13" column="52" lean-forward="false" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-config-multiple-datasources/src/main/resources/schema-postgres.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="2" lean-forward="false" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-config-multiple-datasources/src/main/java/org/spring/tutorial/examples/batch/BatchApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="8" lean-forward="false" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
           <folding />
         </state>
       </provider>
