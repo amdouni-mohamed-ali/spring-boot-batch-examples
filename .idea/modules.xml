@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/java-config-example-1/java-config-example-1.iml" filepath="$PROJECT_DIR$/java-config-example-1/java-config-example-1.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-config-example-2/java-config-example-2.iml" filepath="$PROJECT_DIR$/java-config-example-2/java-config-example-2.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-config-multiple-datasources/java-config-multiple-datasources.iml" filepath="$PROJECT_DIR$/java-config-multiple-datasources/java-config-multiple-datasources.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-config-sheduler/java-config-sheduler.iml" filepath="$PROJECT_DIR$/java-config-sheduler/java-config-sheduler.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-batch-examples.iml" filepath="$PROJECT_DIR$/spring-boot-batch-examples.iml" />
     </modules>
   </component>

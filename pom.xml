@@ -19,6 +19,7 @@
         <module>java-config-example-1</module>
         <module>java-config-example-2</module>
         <module>java-config-multiple-datasources</module>
+        <module>java-config-sheduler</module>
     </modules>
     <packaging>pom</packaging>
 

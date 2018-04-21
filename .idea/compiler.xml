@@ -10,6 +10,7 @@
         <module name="java-config-example-1" />
         <module name="java-config-example-2" />
         <module name="java-config-multiple-datasources" />
+        <module name="java-config-sheduler" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -17,6 +18,7 @@
       <module name="java-config-example-1" target="1.6" />
       <module name="java-config-example-2" target="1.6" />
       <module name="java-config-multiple-datasources" target="1.6" />
+      <module name="java-config-sheduler" target="1.6" />
       <module name="spring-boot-batch-examples" target="1.6" />
     </bytecodeTargetLevel>
   </component>
