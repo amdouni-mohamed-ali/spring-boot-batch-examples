@@ -43,8 +43,8 @@ public class EntityManagerConfig {
 
         entityManagerFactory.setDataSource(dataSource);
 
-        entityManagerFactory.setPackagesToScan(
-                env.getProperty("org.spring.tutorial.examples.batch.domain"));
+        entityManagerFactory.setPackagesToScan("org.spring.tutorial.examples.batch.domain");
+        entityManagerFactory.setPersistenceUnitName("myAppPU");
 
         // Vendor adapter
         HibernateJpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
