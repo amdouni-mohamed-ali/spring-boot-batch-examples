@@ -1,36 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="378339ed-dc82-45f9-9d61-d87331f0f611" name="Default" comment="add java-config-scheduler module">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__postgresql_postgresql_9_1_901_jdbc4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__postgresql_postgresql_9_1_901_1_jdbc4.xml" />
+    <list default="true" id="378339ed-dc82-45f9-9d61-d87331f0f611" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/java-config-example-1/target/classes/application.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java-config-example-1/target/classes/data-h2.sql" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java-config-example-1/target/classes/org/spring/tutorial/examples/batch/BatchApplication.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java-config-example-1/target/classes/org/spring/tutorial/examples/batch/config/BatchConfiguration.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java-config-example-1/target/classes/org/spring/tutorial/examples/batch/domain/User.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java-config-example-1/target/classes/org/spring/tutorial/examples/batch/processors/DataSourceProcessor.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java-config-example-1/target/classes/org/spring/tutorial/examples/batch/readers/DataSourceReader.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java-config-example-1/target/classes/org/spring/tutorial/examples/batch/repository/IUserRepository.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java-config-example-1/target/classes/org/spring/tutorial/examples/batch/writers/DataSourceWriter.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java-config-example-1/target/classes/schema-h2.sql" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java-config-example-2/target/classes/org/spring/tutorial/examples/batch/BatchApplication.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java-config-example-2/target/classes/org/spring/tutorial/examples/batch/config/BatchConfiguration.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java-config-example-2/target/classes/org/spring/tutorial/examples/batch/domain/User.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java-config-example-2/target/classes/org/spring/tutorial/examples/batch/listeners/JobPlanningListener.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java-config-example-2/target/classes/org/spring/tutorial/examples/batch/listeners/StepListener.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java-config-example-2/target/classes/org/spring/tutorial/examples/batch/tasklets/ToUpperCaseTasklet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java-config-multiple-datasources/target/classes/application.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java-config-multiple-datasources/target/classes/org/spring/tutorial/examples/batch/BatchApplication.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java-config-multiple-datasources/target/classes/org/spring/tutorial/examples/batch/config/BatchDataSourceConfig.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java-config-multiple-datasources/target/classes/org/spring/tutorial/examples/batch/config/BatchJobsConfiguration.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java-config-multiple-datasources/target/classes/org/spring/tutorial/examples/batch/config/EntityManagerConfig.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java-config-multiple-datasources/target/classes/org/spring/tutorial/examples/batch/domain/User.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java-config-multiple-datasources/target/classes/org/spring/tutorial/examples/batch/processors/DataSourceProcessor.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java-config-multiple-datasources/target/classes/org/spring/tutorial/examples/batch/readers/DataSourceReader.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java-config-multiple-datasources/target/classes/org/spring/tutorial/examples/batch/repository/IUserRepository.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java-config-multiple-datasources/target/classes/org/spring/tutorial/examples/batch/writers/DataSourceWriter.class" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -868,7 +840,14 @@
       <option name="project" value="LOCAL" />
       <updated>1524340789143</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add .gitignore file">
+      <created>1524341128871</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1524341128871</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -906,7 +885,8 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="add java-config-scheduler module" />
     <MESSAGE value="add postgres schema configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="add postgres schema configuration" />
+    <MESSAGE value="add .gitignore file" />
+    <option name="LAST_COMMIT_MESSAGE" value="add .gitignore file" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
