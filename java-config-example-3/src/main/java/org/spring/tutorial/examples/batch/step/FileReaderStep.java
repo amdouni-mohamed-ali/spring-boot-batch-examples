@@ -14,6 +14,7 @@ import org.springframework.batch.core.step.tasklet.Tasklet;
 import org.springframework.batch.repeat.RepeatStatus;
 import org.springframework.stereotype.Component;
 
+import java.util.Arrays;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -52,8 +53,17 @@ public class FileReaderStep implements Tasklet, StepExecutionListener {
 
 
         LOGGER.debug("Start reading the input file from {}", ioService.getInputFile().toString());
+        LOGGER.trace("received data");
         CSVUtils.readCsvLines(ioService.getInputFile()).forEach(
-                line -> entryRecords.put(line[3], line)  //line[3] is the employee id
+                line -> {
+
+                    entryRecords.put(line[3], line); //line[3] is the employee id
+                    if (LOGGER.isTraceEnabled()) {
+                        StringBuilder record = new StringBuilder();
+                        Arrays.asList(line).forEach(s -> record.append(s).append(" | "));
+                        LOGGER.trace(record.toString());
+                    }
+                }
         );
         LOGGER.debug("finish reading the input file");
         return RepeatStatus.FINISHED;

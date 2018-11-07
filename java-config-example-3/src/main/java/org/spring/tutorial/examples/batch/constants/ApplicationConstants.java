@@ -3,6 +3,8 @@ package org.spring.tutorial.examples.batch.constants;
 public class ApplicationConstants {
 
     public static final String INPUT_FILE = "in_file";
+    public static final String EMPLOYEES = "employees";
+    public static final String OUTPUT_FILE = "out_file";
 
     /***************************************************************
      * jobs and steps configuration

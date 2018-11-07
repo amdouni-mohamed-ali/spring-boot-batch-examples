@@ -10,7 +10,7 @@ import java.util.List;
 @PropertySource("classpath:config/special.properties")
 public class SpecialEmployees {
 
-    @Value("#{'${ids}'.split(';')}")
+    @Value("#{'${ids}'.split(',')}")
     private List<String> specialEmployees;
 
     public List<String> getSpecialEmployees() {

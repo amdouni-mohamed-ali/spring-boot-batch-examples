@@ -1,11 +1,20 @@
 package org.spring.tutorial.examples.batch.entity;
 
-public class Employee {
+import com.opencsv.bean.CsvBindByPosition;
 
+import java.io.Serializable;
+
+public class Employee implements Serializable {
+
+    @CsvBindByPosition(position = 0)
     private Long empId;
+    @CsvBindByPosition(position = 1)
     private String firstName;
+    @CsvBindByPosition(position = 2)
     private String lastName;
+    @CsvBindByPosition(position = 3)
     private Character sex;
+    @CsvBindByPosition(position = 4)
     private Double salary;
 
     public Long getEmpId() {
@@ -51,5 +60,16 @@ public class Employee {
     public Employee setSalary(Double salary) {
         this.salary = salary;
         return this;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "empId=" + empId +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", sex=" + sex +
+                ", salary=" + salary +
+                '}';
     }
 }
