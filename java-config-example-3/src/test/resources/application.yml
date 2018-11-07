@@ -1,0 +1,8 @@
+#this configuration is used to override the one used by our program
+spring:
+  profiles:
+    active: local
+  batch:
+    job:
+      enabled: false
+      #to stop the automatic execution of the program

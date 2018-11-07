@@ -12,6 +12,7 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>1.5.10.RELEASE</version>
+        <!-- it's not a good idea to bind the project to the spring boot parent -->
     </parent>
 
     <properties>
