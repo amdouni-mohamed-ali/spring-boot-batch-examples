@@ -28,6 +28,7 @@
         <module>java-config-multiple-datasources</module>
         <module>java-config-sheduler</module>
         <module>java-config-example-3</module>
+        <module>java-config-example-4</module>
     </modules>
     <packaging>pom</packaging>
 
