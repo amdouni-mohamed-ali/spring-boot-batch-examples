@@ -10,7 +10,7 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 /*
     you must exclude this class otherwise you will have an exception of type
         Cannot determine embedded database driver class for database type NONE
-    to fix it, you can also add a datasource configuration in the classpath
+    to fix it, you can also add a data source configuration in the classpath
  */
 @EnableBatchProcessing
 public class BatchApplication {

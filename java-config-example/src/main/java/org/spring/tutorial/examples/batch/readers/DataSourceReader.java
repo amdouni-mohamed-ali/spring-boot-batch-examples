@@ -6,9 +6,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class DataSourceReader implements ItemReader<String> {
 
-    private String[] messages = { "javainuse.com",
-            "Welcome to Spring Batch Example",
-            "We use H2 Database for this example" };
+    private String[] messages = "This is a simple spring batch example".split(" ");
 
     private int count = 0;
 
