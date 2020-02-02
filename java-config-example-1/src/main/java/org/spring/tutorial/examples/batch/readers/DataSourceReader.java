@@ -3,28 +3,32 @@ package org.spring.tutorial.examples.batch.readers;
 import org.spring.tutorial.examples.batch.domain.User;
 import org.spring.tutorial.examples.batch.repository.IUserRepository;
 import org.springframework.batch.item.ItemReader;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import java.util.ArrayList;
-import java.util.List;
+import javax.annotation.PostConstruct;
+import java.util.Iterator;
 
 @Component
-public class DataSourceReader implements ItemReader<List<User>> {
+public class DataSourceReader implements ItemReader<User> {
 
-//    @Autowired
-//    IUserRepository userRepository;
+    private final IUserRepository userRepository;
+    private Iterator<User> usersIterator;
 
-    private int count = 0;
+    public DataSourceReader(IUserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
+
+    @PostConstruct
+    private void init() {
+
+        usersIterator = userRepository.findAll().iterator();
+    }
 
     @Override
-    public List<User> read(){
+    public User read() {
 
-        List<User> users = new ArrayList<User>();
-        users.add(new User(1,"maa","maa"));
-        users.add(new User(1,"mbb","mbb"));
-        users.add(new User(1,"mnn","mnn"));
-//        return userRepository.findAll();
-        return users;
+        if (usersIterator.hasNext())
+            return usersIterator.next();
+        return null;
     }
 }

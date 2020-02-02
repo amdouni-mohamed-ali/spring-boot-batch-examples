@@ -1,4 +1,11 @@
---will be applied for h2 database only
+create table app_user
+(
+   id integer not null,
+   name varchar(255) not null,
+   email varchar(255) not null,
+   primary key(id)
+);
+
 INSERT INTO app_user VALUES (1, 'mkyong', 'mkyong@gmail.com');
 INSERT INTO app_user VALUES (2, 'alex', 'alex@yahoo.com');
 INSERT INTO app_user VALUES (3, 'joel', 'joel@gmail.com');

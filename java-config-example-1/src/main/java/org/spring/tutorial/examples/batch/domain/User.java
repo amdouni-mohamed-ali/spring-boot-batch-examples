@@ -9,12 +9,11 @@ import javax.persistence.Table;
 public class User {
 
     @Id
-    private long id;
+    private Long id;
     private String name;
     private String email;
 
     public User() {
-        // TODO Auto-generated constructor stub
     }
 
     public User(long id, String name, String email) {
@@ -24,11 +23,11 @@ public class User {
         this.email = email;
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

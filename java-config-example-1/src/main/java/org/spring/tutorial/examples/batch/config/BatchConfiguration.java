@@ -13,8 +13,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import java.util.List;
-
 
 @Configuration
 public class BatchConfiguration {
@@ -37,7 +35,6 @@ public class BatchConfiguration {
     @Bean
     public Job processDataJob() {
         return jobBuilderFactory.get("processDataJob")
-//                .listener(listener())
                 .flow(toUpperCaseStep())
                 .end()
                 .build();
@@ -46,7 +43,7 @@ public class BatchConfiguration {
     @Bean
     public Step toUpperCaseStep() {
         return stepBuilderFactory.get("toUpperCaseStep")
-                .<List<User>, List<User>> chunk(1)
+                .<User, User>chunk(1)
                 .reader(dataSourceReader)
                 .processor(dataSourceProcessor)
                 .writer(dataSourceWriter)

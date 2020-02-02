@@ -8,13 +8,11 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 @Component
-public class DataSourceWriter implements ItemWriter<List<User>> {
+public class DataSourceWriter implements ItemWriter<User> {
 
     @Override
-    public void write(List<? extends List<User>> users) throws Exception {
+    public void write(List<? extends User> users) {
 
-        for (Object user : users) {
-            System.out.println("Writing the data " + user);
-        }
+        users.forEach(System.out::println);
     }
 }
