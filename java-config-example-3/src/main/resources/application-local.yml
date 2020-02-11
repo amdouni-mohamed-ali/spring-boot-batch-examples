@@ -1,6 +1,6 @@
 batch:
-  in-file: D:/tmp/input_example
-  output-file: D:/tmp/output_example
+  in-file: /tmp/input_example
+  output-file: /tmp/output_example
 logging:
   level:
     org.springframework: ERROR

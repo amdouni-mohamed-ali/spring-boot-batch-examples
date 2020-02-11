@@ -13,5 +13,5 @@ public class ApplicationConstants {
     public static final String JOB_NAME = "process_csv_file";
     public static final String FILE_READER_STEP = "file_reader_step";
     public static final String PROCESS_DATA_STEP = "process_file_step";
-    public static final String WRITIE_DATA_STEP = "write_data_step";
+    public static final String WRITE_DATA_STEP = "write_data_step";
 }

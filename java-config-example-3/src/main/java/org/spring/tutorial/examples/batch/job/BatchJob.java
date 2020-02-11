@@ -50,7 +50,7 @@ public class BatchJob {
     protected Step writeData() {
 
         return stepBuilderFactory
-                .get(ApplicationConstants.WRITIE_DATA_STEP)
+                .get(ApplicationConstants.WRITE_DATA_STEP)
                 .tasklet(fileWriteDataStep)
                 .build();
     }
