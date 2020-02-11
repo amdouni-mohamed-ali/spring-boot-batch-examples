@@ -3,7 +3,6 @@ package org.spring.tutorial.examples.batch.config;
 import org.spring.tutorial.examples.batch.listeners.JobPlanningListener;
 import org.spring.tutorial.examples.batch.listeners.StepListener;
 import org.spring.tutorial.examples.batch.tasklets.ToUpperCaseTasklet;
-import org.springframework.batch.core.ExitStatus;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
 import org.springframework.batch.core.configuration.annotation.JobBuilderFactory;
@@ -32,8 +31,6 @@ public class BatchConfiguration {
         return jobBuilderFactory.get("processDataJob")
                 .listener(jobPlanningListener)
                 .flow(toUpperCaseStep())
-                .on(ExitStatus.FAILED.getExitCode())
-                .fail()
                 .end()
                 .build();
     }

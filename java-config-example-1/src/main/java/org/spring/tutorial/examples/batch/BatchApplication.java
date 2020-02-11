@@ -19,6 +19,7 @@ public class BatchApplication {
 
         ConfigurableApplicationContext context = SpringApplication.run(BatchApplication.class, args);
 
+        // This code is not really necessary as spring boot will run automatically the configured job
         JobLauncher jobLauncher = (JobLauncher) context.getBean("jobLauncher");
         Job processJob = (Job) context.getBean("processDataJob");
         JobParameters jobParameters = new JobParametersBuilder().addLong("time", System.currentTimeMillis()).toJobParameters();
