@@ -2,6 +2,8 @@
 
 In this example, we will show you how to configure a simple spring batch project.
 
+- https://docs.spring.io/spring-batch/docs/current/reference/html/step.html#chunkOrientedProcessing
+
 ## Overview
 
 We will create a simple project to process data, our source of data is an array of strings declared in the `DataSourceReader.java` file.

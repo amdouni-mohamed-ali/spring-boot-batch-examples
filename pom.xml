@@ -22,8 +22,8 @@
     </properties>
 
     <modules>
-        <module>java-config-example</module>
-        <module>java-config-example-1</module>
+        <module>chunk-oriented-processing</module>
+        <module>process-database-data</module>
         <module>tasklet-listener-example</module>
         <module>process-csv-file</module>
         <module>abstract-job-step-example</module>
