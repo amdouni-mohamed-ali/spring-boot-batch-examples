@@ -29,6 +29,7 @@
         <module>abstract-job-step-example</module>
         <module>java-config-multiple-datasources</module>
         <module>java-config-scheduler</module>
+        <module>conditional-flow-example</module>
     </modules>
     <packaging>pom</packaging>
 
