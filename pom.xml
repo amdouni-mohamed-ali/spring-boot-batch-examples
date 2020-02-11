@@ -24,10 +24,10 @@
     <modules>
         <module>java-config-example</module>
         <module>java-config-example-1</module>
-        <module>java-config-example-2</module>
+        <module>tasklet-listener-example</module>
+        <module>process-csv-file</module>
         <module>java-config-multiple-datasources</module>
         <module>java-config-scheduler</module>
-        <module>java-config-example-3</module>
         <module>java-config-example-4</module>
     </modules>
     <packaging>pom</packaging>

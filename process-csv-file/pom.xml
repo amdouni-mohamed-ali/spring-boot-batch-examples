@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>java-config-example-3</artifactId>
+    <artifactId>process-csv-file</artifactId>
 
     <dependencies>
         <dependency>
