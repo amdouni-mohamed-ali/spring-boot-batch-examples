@@ -53,7 +53,7 @@ As this is a spring boot app, you can run the main method from `BatchApplication
 $ mvn spring-boot:run
 ```
 
-After packaging the project, you should have this result :
+After running the project, you should have this result :
 
 ```log
 2020-02-11 10:35:23.905  INFO 13037 --- [           main] o.s.b.c.l.support.SimpleJobLauncher      : Job: [FlowJob: [name=processDataJob]] launched with the following parameters: [{time=1581413723845}]
