@@ -17,6 +17,6 @@ public class BatchApplication {
 
         LOGGER.info("start batch ...");
         SpringApplication.run(BatchApplication.class, args);
-        LOGGER.info("the batch was ended. please check its status.");
+        LOGGER.info("the batch process has finished. please check its status.");
     }
 }

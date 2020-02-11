@@ -30,6 +30,7 @@ public class CollectDataStep extends AbstractStep {
 
         //collect all data from database
         orderItems = iOrderItem.findAll();
+        orderItems.forEach(orderItem -> LOGGER.info("{}", orderItem));
     }
 
     @Override
