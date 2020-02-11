@@ -26,9 +26,9 @@
         <module>java-config-example-1</module>
         <module>tasklet-listener-example</module>
         <module>process-csv-file</module>
+        <module>abstract-job-step-example</module>
         <module>java-config-multiple-datasources</module>
         <module>java-config-scheduler</module>
-        <module>java-config-example-4</module>
     </modules>
     <packaging>pom</packaging>
 
