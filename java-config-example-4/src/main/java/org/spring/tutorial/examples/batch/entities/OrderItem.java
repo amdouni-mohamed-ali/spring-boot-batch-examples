@@ -12,7 +12,7 @@ public class OrderItem {
     private Integer orderItemId;
     private String orderItemProductId;
     private Integer orderItemQuantity;
-    private Float orderItemProdcutPrice;
+    private Float orderItemProductPrice;
 
     @Id
     @Column(name = "ORDER_ITEM_ID")
@@ -46,12 +46,12 @@ public class OrderItem {
     }
 
     @Column(name = "ORDER_ITEM_PRODUCT_PRICE")
-    public Float getOrderItemProdcutPrice() {
-        return orderItemProdcutPrice;
+    public Float getOrderItemProductPrice() {
+        return orderItemProductPrice;
     }
 
-    public OrderItem setOrderItemProdcutPrice(Float orderItemProdcutPrice) {
-        this.orderItemProdcutPrice = orderItemProdcutPrice;
+    public OrderItem setOrderItemProductPrice(Float orderItemProductPrice) {
+        this.orderItemProductPrice = orderItemProductPrice;
         return this;
     }
 
@@ -61,7 +61,7 @@ public class OrderItem {
                 "orderItemId=" + orderItemId +
                 ", orderItemProductId='" + orderItemProductId + '\'' +
                 ", orderItemQuantity=" + orderItemQuantity +
-                ", orderItemProdcutPrice=" + orderItemProdcutPrice +
+                ", orderItemProdcutPrice=" + orderItemProductPrice +
                 '}';
     }
 }

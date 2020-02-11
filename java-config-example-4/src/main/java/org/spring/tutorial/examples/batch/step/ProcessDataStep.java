@@ -40,7 +40,7 @@ public class ProcessDataStep extends AbstractStep {
             orderItemTotals.add(
                     new OrderItemTotal()
                             .setOrderItemId(orderItem.getOrderItemId())
-                            .setOrderItemSubTotal(orderItem.getOrderItemQuantity() * orderItem.getOrderItemProdcutPrice())
+                            .setOrderItemSubTotal(orderItem.getOrderItemQuantity() * orderItem.getOrderItemProductPrice())
             );
         });
     }
