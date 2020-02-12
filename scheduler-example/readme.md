@@ -47,22 +47,20 @@ Job finished with status :COMPLETED
 
 The job is running each 5 seconds.
 
-We are the cron syntax to schedule the job :
+We are using the cron syntax to schedule the job :
 
 * @Scheduled(cron = "*/5 * * * * *")
 
 Here is some explanations :
 
-cron is represented by six fields :
+cron is represented by six fields : second, minute, hour, day of month, month, day(s) of week
 
-second, minute, hour, day of month, month, day(s) of week
-
-- \* : every time unit. * in the <minute> field minute means “for every minute”.
+- \* : every time unit. * in the `minute` field minute means “for every minute”.
 - */X : every X time unit.
-- X/Y : it is used to specify the incremental values. For example, a “5/15” in the <minute> field, means at “5, 20, 35 and 50 minutes of an hour”
-- \- : (range) it is used to determine the value range. For example, “10-11” in <hour> field means “10th and 11th hours”
-- , : (values) it is used to specify multiple values. For example, “MON, WED, FRI” in <day-of-week> field means on the days “Monday, Wednesday, and Friday”
-- ? : any value , not specific. It is utilized in the <day-of-month> and <day-of-week> fields to denote the arbitrary value – neglect the field value. For example, if we want to fire a script at “5th of every month” irrespective of what the day of the week falls on that date, then we specify a “?” in the <day-of-week> field.
+- X/Y : it is used to specify the incremental values. For example, a “5/15” in the `minute` field, means at “5, 20, 35 and 50 minutes of an hour”
+- \- : (range) it is used to determine the value range. For example, “10-11” in `hour` field means “10th and 11th hours”
+- , : (values) it is used to specify multiple values. For example, “MON, WED, FRI” in `day-of-week` field means on the days “Monday, Wednesday, and Friday”
+- ? : any value , not specific. It is utilized in the `day-of-month` and `day-of-week` fields to denote the arbitrary value – neglect the field value. For example, if we want to fire a script at “5th of every month” irrespective of what the day of the week falls on that date, then we specify a “?” in the `day-of-week` field.
 
 And examples :
 
