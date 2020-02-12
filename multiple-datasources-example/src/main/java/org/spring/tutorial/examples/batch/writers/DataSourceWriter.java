@@ -9,8 +9,8 @@ import java.util.List;
 public class DataSourceWriter implements ItemWriter<String> {
 
     @Override
-    public void write(List<? extends String> email) throws Exception {
+    public void write(List<? extends String> emails) throws Exception {
 
-        System.out.println("Writing the data " + email);
+        System.out.println("Writing data " + emails);
     }
 }

@@ -4,8 +4,6 @@ import org.spring.tutorial.examples.batch.domain.User;
 import org.springframework.batch.item.ItemProcessor;
 import org.springframework.stereotype.Component;
 
-import java.util.List;
-
 @Component
 public class DataSourceProcessor implements ItemProcessor<User, String> {
 

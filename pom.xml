@@ -27,7 +27,7 @@
         <module>tasklet-listener-example</module>
         <module>process-csv-file</module>
         <module>abstract-job-step-example</module>
-        <module>java-config-multiple-datasources</module>
+        <module>multiple-datasources-example</module>
         <module>java-config-scheduler</module>
         <module>conditional-flow-example</module>
     </modules>
