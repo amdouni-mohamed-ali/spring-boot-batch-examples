@@ -29,7 +29,7 @@ public class EntityManagerConfig {
     private Environment env;
 
     @Bean(name = "jpaDS")
-    @ConfigurationProperties(prefix = "spring.jpa.datasource")
+    @ConfigurationProperties(prefix = "example.jpa.datasource")
     public DataSource jpaDataSource() {
         return DataSourceBuilder.create().build();
     }
@@ -37,7 +37,7 @@ public class EntityManagerConfig {
     @Bean
     public LocalContainerEntityManagerFactoryBean entityManagerFactory(EntityManagerFactoryBuilder builder, @Qualifier("jpaDS") DataSource dataSource) {
 
-        //because we have 2 datasources (gonna be a little bit complicated with the properties file), i m gonna the configure the entity manager in this method
+        //because we have 2 data-sources (gonna be a little bit complicated with the properties file), i m gonna the configure the entity manager in this method
         LocalContainerEntityManagerFactoryBean entityManagerFactory =
                 new LocalContainerEntityManagerFactoryBean();
 
@@ -54,17 +54,17 @@ public class EntityManagerConfig {
         Properties additionalProperties = new Properties();
         additionalProperties.put(
                 "hibernate.dialect",
-                env.getProperty("spring.jpa.datasource.properties.hibernate.dialect"));
+                env.getProperty("example.jpa.datasource.properties.hibernate.dialect"));
         additionalProperties.put(
                 "hibernate.show_sql",
-                env.getProperty("spring.jpa.datasource.hibernate.show_sql"));
+                env.getProperty("example.jpa.datasource.hibernate.show_sql"));
         additionalProperties.put(
                 "hibernate.hbm2ddl.auto",
-                env.getProperty("spring.jpa.datasource.hibernate.ddl-auto"));
+                env.getProperty("example.jpa.datasource.hibernate.ddl-auto"));
         // comment the schema property if you will use the public schema
         additionalProperties.put(
                 "hibernate.default_schema",
-                env.getProperty("spring.jpa.datasource.properties.hibernate.default_schema"));
+                env.getProperty("example.jpa.datasource.properties.hibernate.default_schema"));
 
         entityManagerFactory.setJpaProperties(additionalProperties);
 

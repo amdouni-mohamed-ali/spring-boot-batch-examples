@@ -1,0 +1,27 @@
+version: "3.3"
+
+services:
+  spring-app:
+    container_name: md-app
+    build: .
+    environment:
+      POSTGRES_HOST: postgres
+    depends_on:
+      - postgres
+
+  postgres:
+    container_name: postgres
+    image: postgres:9.6.9
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: db
+      PGDATA: /data/postgres
+    volumes:
+      - postgres-volume:/data/postgres
+    command: ["postgres", "-c", "listen_addresses=*"]
+    # as we are on a dev platform we will accept connections from all hosts. make sure to configure you trust pool connections in production
+
+volumes:
+  postgres-volume:
