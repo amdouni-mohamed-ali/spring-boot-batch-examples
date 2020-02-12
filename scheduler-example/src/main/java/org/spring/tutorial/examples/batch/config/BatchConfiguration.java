@@ -39,7 +39,6 @@ public class BatchConfiguration {
     @Bean
     public Job processDataJob() {
         return jobBuilderFactory.get("processDataJob")
-//                .listener(listener())
                 .flow(toUpperCaseStep())
                 .end()
                 .build();
