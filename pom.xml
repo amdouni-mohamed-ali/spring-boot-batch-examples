@@ -28,7 +28,7 @@
         <module>process-csv-file</module>
         <module>abstract-job-step-example</module>
         <module>multiple-datasources-example</module>
-        <module>java-config-scheduler</module>
+        <module>scheduler-example</module>
         <module>conditional-flow-example</module>
     </modules>
     <packaging>pom</packaging>
