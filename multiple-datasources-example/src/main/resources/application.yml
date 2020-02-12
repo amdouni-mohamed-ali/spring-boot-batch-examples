@@ -9,7 +9,7 @@ spring:
       driverClassName: org.h2.Driver
       username: sa
       password:
-    table-prefix: MDS # Table prefix for all the batch meta-data tables. check other parameter in the tail of the file
+    #table-prefix: MDS_ # Table prefix for all the batch meta-data tables. check other parameter in the tail of the file
 
   h2:
     console:

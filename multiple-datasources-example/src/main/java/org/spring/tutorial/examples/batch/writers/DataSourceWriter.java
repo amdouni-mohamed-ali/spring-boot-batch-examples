@@ -13,7 +13,10 @@ public class DataSourceWriter implements ItemWriter<String> {
     private static final Logger LOGGER = LoggerFactory.getLogger(DataSourceWriter.class);
 
     @Override
-    public void write(List<? extends String> emails) {
+    public void write(List<? extends String> emails) throws InterruptedException {
+
+        // this line was added to show how spring batch process data
+        Thread.sleep(1000);
 
         if (emails != null && !emails.isEmpty()) {
 

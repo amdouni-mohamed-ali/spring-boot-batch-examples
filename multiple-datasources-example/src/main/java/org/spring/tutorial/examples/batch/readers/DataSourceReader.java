@@ -1,5 +1,7 @@
 package org.spring.tutorial.examples.batch.readers;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.spring.tutorial.examples.batch.domain.User;
 import org.spring.tutorial.examples.batch.repository.IUserRepository;
 import org.springframework.batch.item.ItemReader;
@@ -10,7 +12,9 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 @Component
-public class DataSourceReader implements ItemReader<User> ,InitializingBean {
+public class DataSourceReader implements ItemReader<User>, InitializingBean {
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(DataSourceReader.class);
 
     @Autowired
     IUserRepository userRepository;
@@ -22,6 +26,8 @@ public class DataSourceReader implements ItemReader<User> ,InitializingBean {
     public User read() {
 
         if (count < users.size()) {
+
+            LOGGER.info("Reading : {}", users.get(count));
             return users.get(count++);
         } else {
             return null;
@@ -32,5 +38,6 @@ public class DataSourceReader implements ItemReader<User> ,InitializingBean {
     public void afterPropertiesSet() throws Exception {
 
         users = userRepository.findAll();
+        LOGGER.info("The list of users is : {}", users);
     }
 }

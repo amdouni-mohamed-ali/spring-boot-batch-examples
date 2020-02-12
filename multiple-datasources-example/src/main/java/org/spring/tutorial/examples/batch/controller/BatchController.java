@@ -46,6 +46,7 @@ public class BatchController {
                 );
             } catch (Exception e) {
 
+                LOGGER.error("Error has occurred while trying to run the job ", e);
                 return new ResponseEntity<>("An error has occurred after running the batch", HttpStatus.INTERNAL_SERVER_ERROR);
             }
         } else {
