@@ -9,6 +9,8 @@ spring:
       driverClassName: org.h2.Driver
       username: sa
       password:
+    table-prefix: MDS # Table prefix for all the batch meta-data tables. check other parameter in the tail of the file
+
   h2:
     console:
       enabled: true
@@ -48,4 +50,3 @@ logging:
 #spring.batch.job.enabled=false  Execute all Spring Batch jobs in the context on startup.
 #spring.batch.job.names= # Comma-separated list of job names to execute on startup (for instance, `job1,job2`). By default, all Jobs found in the context are executed.
 #spring.batch.schema=classpath:org/springframework/batch/core/schema-@@platform@@.sql # Path to the SQL file to use to initialize the database schema.
-#spring.batch.table-prefix= # Table prefix for all the batch meta-data tables.
