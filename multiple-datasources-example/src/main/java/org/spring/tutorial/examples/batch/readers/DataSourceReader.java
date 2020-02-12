@@ -3,9 +3,6 @@ package org.spring.tutorial.examples.batch.readers;
 import org.spring.tutorial.examples.batch.domain.User;
 import org.spring.tutorial.examples.batch.repository.IUserRepository;
 import org.springframework.batch.item.ItemReader;
-import org.springframework.batch.item.NonTransientResourceException;
-import org.springframework.batch.item.ParseException;
-import org.springframework.batch.item.UnexpectedInputException;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -22,7 +19,7 @@ public class DataSourceReader implements ItemReader<User> ,InitializingBean {
     private int count = 0;
 
     @Override
-    public User read() throws Exception, UnexpectedInputException, ParseException, NonTransientResourceException {
+    public User read() {
 
         if (count < users.size()) {
             return users.get(count++);

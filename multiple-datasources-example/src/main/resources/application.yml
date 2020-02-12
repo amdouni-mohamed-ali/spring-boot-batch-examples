@@ -5,9 +5,21 @@ spring:
       enabled: false
     datasource:
       url: jdbc:h2:file:~/test;DB_CLOSE_ON_EXIT=FALSE;DB_CLOSE_DELAY=-1
+      # this is a file and not an in memory url. to change this behavior use : jdbc:h2:mem:testdb
       driverClassName: org.h2.Driver
       username: sa
       password:
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+      # relative path of our app. the url gonna be http://localhost:8080/h2-console
+      settings:
+        trace: false
+        # prevent trace output
+        web-allow-others: true
+      # enable remote access. I enable it because i'm using docker but it's risky to use this on production
+      #source : https://www.baeldung.com/spring-boot-h2-database
 
 #JPA DATA-SOURCE (this properties are not a spring properties. they are gonna be used to configure the entity manger bean)
 example:

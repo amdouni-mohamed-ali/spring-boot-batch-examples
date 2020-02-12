@@ -6,6 +6,8 @@ services:
     build: .
     environment:
       POSTGRES_HOST: postgres
+    ports:
+      - 8080:8080
     depends_on:
       - postgres
 
