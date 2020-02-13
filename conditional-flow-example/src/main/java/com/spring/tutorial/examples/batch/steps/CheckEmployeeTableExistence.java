@@ -21,12 +21,13 @@ public class CheckEmployeeTableExistence implements Tasklet {
     @Override
     public RepeatStatus execute(StepContribution stepContribution, ChunkContext chunkContext) {
 
-        String table = jdbcTemplate.queryForObject(
+        String found = jdbcTemplate.queryForObject(
                 "select count(*) from information_schema.tables where table_name = ?",
                 new Object[]{"employee"},
                 String.class
         );
-        Assert.hasLength(table, "Employee table does not exist");
+        Assert.hasLength(found, "Employee table does not exist");
+        Assert.doesNotContain(found, "0", "Employee table does not exist");
         return RepeatStatus.FINISHED;
     }
 }

@@ -2,6 +2,7 @@ package com.spring.tutorial.examples.batch.jobs;
 
 import com.spring.tutorial.examples.batch.constants.AppConstants;
 import com.spring.tutorial.examples.batch.listeners.JobListener;
+import org.springframework.batch.core.ExitStatus;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
 import org.springframework.batch.core.configuration.annotation.JobBuilderFactory;
@@ -24,13 +25,19 @@ public class SalaryDepositJob {
 
     @Bean
     protected Job job(
-            Step checkEmployeeTableExistenceStep
+            Step checkEmployeeTableExistenceStep,
+            Step createEmployeesTableStep
     ) {
 
         return jobBuilderFactory
                 .get(AppConstants.JOB_NAME)
                 .listener(jobListener)
-                .start(checkEmployeeTableExistenceStep)
+
+                .flow(checkEmployeeTableExistenceStep)
+                .on(ExitStatus.FAILED.getExitCode())
+                .to(createEmployeesTableStep)
+
+                .end()
                 .build();
     }
 }

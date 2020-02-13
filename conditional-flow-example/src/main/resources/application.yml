@@ -13,4 +13,4 @@ logging:
   level:
     root: FATAL
     org.springframework: WARN
-    com.spring.tutorial: INFO
+    com.spring.tutorial: DEBUG

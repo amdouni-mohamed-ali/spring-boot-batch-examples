@@ -3,6 +3,7 @@ package com.spring.tutorial.examples.batch.jobs;
 import com.spring.tutorial.examples.batch.constants.AppConstants;
 import com.spring.tutorial.examples.batch.listeners.StepListener;
 import com.spring.tutorial.examples.batch.steps.CheckEmployeeTableExistence;
+import com.spring.tutorial.examples.batch.steps.CreateEmployeeTable;
 import org.springframework.batch.core.Step;
 import org.springframework.batch.core.configuration.annotation.StepBuilderFactory;
 import org.springframework.context.annotation.Bean;
@@ -25,6 +26,16 @@ public class SalaryDepositSteps {
         return stepBuilderFactory
                 .get(AppConstants.CHECK_EMPLOYEE_TABLE_EXISTENCE)
                 .tasklet(checkEmployeeTableExistence)
+                .listener(stepListener)
+                .build();
+    }
+
+    @Bean
+    protected Step createEmployeesTableStep(CreateEmployeeTable createEmployeeTable) {
+
+        return stepBuilderFactory
+                .get(AppConstants.CREATE_EMPLOYEES_TABLE)
+                .tasklet(createEmployeeTable)
                 .listener(stepListener)
                 .build();
     }
