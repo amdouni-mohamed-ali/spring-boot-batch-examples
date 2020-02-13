@@ -12,6 +12,7 @@ import java.util.List;
 @Component
 public class DisplayEmployees extends AbstractStep {
 
+    // for the steps that don't use table in theirs sql queries we will use the AbstractStep class
 
     @Override
     public RepeatStatus execute(StepContribution stepContribution, ChunkContext chunkContext) {
