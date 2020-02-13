@@ -14,12 +14,12 @@ public class JobListener extends JobExecutionListenerSupport {
     @Override
     public void beforeJob(JobExecution jobExecution) {
 
-        LOGGER.info("### Before JOB - {} {} : {}", jobExecution.getJobInstance().getInstanceId(), jobExecution.getJobInstance().getJobName(), jobExecution.getStatus());
+        LOGGER.info("### Before JOB - ID#{} NAME#{} : {}", jobExecution.getJobInstance().getInstanceId(), jobExecution.getJobInstance().getJobName(), jobExecution.getStatus());
     }
 
     @Override
     public void afterJob(JobExecution jobExecution) {
-        LOGGER.info("### After JOB - #{} : {} - {}", jobExecution.getJobInstance().getInstanceId(),
+        LOGGER.info("### After JOB - ID#{}  NAME#{} : {}", jobExecution.getJobInstance().getInstanceId(),
                 jobExecution.getJobInstance().getJobName(), jobExecution.getStatus(), jobExecution.getExitStatus().getExitCode());
     }
 }

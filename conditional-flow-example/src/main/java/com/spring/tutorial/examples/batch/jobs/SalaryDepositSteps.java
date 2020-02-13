@@ -1,6 +1,6 @@
 package com.spring.tutorial.examples.batch.jobs;
 
-import com.spring.tutorial.examples.batch.constants.BatchObjectsNames;
+import com.spring.tutorial.examples.batch.constants.AppConstants;
 import com.spring.tutorial.examples.batch.listeners.StepListener;
 import com.spring.tutorial.examples.batch.steps.CheckEmployeeTableExistence;
 import org.springframework.batch.core.Step;
@@ -23,7 +23,7 @@ public class SalaryDepositSteps {
     protected Step checkEmployeeTableExistenceStep(CheckEmployeeTableExistence checkEmployeeTableExistence) {
 
         return stepBuilderFactory
-                .get(BatchObjectsNames.CHECK_EMPLOYEE_TABLE_EXISTENCE)
+                .get(AppConstants.CHECK_EMPLOYEE_TABLE_EXISTENCE)
                 .tasklet(checkEmployeeTableExistence)
                 .listener(stepListener)
                 .build();

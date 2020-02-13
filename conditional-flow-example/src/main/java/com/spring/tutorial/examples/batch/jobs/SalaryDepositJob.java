@@ -1,6 +1,7 @@
 package com.spring.tutorial.examples.batch.jobs;
 
-import com.spring.tutorial.examples.batch.constants.BatchObjectsNames;
+import com.spring.tutorial.examples.batch.constants.AppConstants;
+import com.spring.tutorial.examples.batch.listeners.JobListener;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
 import org.springframework.batch.core.configuration.annotation.JobBuilderFactory;
@@ -13,10 +14,12 @@ public class SalaryDepositJob {
 
     private final JobBuilderFactory jobBuilderFactory;
     private final StepBuilderFactory stepBuilderFactory;
+    private final JobListener jobListener;
 
-    public SalaryDepositJob(JobBuilderFactory jobBuilderFactory, StepBuilderFactory stepBuilderFactory) {
+    public SalaryDepositJob(JobBuilderFactory jobBuilderFactory, StepBuilderFactory stepBuilderFactory, JobListener jobListener) {
         this.jobBuilderFactory = jobBuilderFactory;
         this.stepBuilderFactory = stepBuilderFactory;
+        this.jobListener = jobListener;
     }
 
     @Bean
@@ -25,7 +28,8 @@ public class SalaryDepositJob {
     ) {
 
         return jobBuilderFactory
-                .get(BatchObjectsNames.JOB_NAME)
+                .get(AppConstants.JOB_NAME)
+                .listener(jobListener)
                 .start(checkEmployeeTableExistenceStep)
                 .build();
     }
