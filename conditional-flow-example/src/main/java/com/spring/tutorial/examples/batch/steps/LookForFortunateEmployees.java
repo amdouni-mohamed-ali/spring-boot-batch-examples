@@ -8,8 +8,7 @@ import org.springframework.stereotype.Component;
 import java.time.LocalDate;
 
 @Component
-public class LookForFortunateEmployee extends AbstractStep {
-
+public class LookForFortunateEmployees extends AbstractStep {
 
     @Override
     public RepeatStatus execute(StepContribution stepContribution, ChunkContext chunkContext) {
