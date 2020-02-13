@@ -21,7 +21,7 @@ import java.nio.charset.StandardCharsets;
 public class CreateEmployeeTable implements Tasklet {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(CreateEmployeeTable.class);
-    private final JdbcTemplate jdbcTemplate;
+    protected final JdbcTemplate jdbcTemplate;
     @Value("classpath:createEmployees.sql")
     private Resource resource;
 
@@ -34,13 +34,17 @@ public class CreateEmployeeTable implements Tasklet {
 
         String createEmployeesSql = fileAsString();
         LOGGER.debug("Sql script to create employees : {}", createEmployeesSql);
-        //jdbcTemplate.execute(createEmployeesSql);
+        jdbcTemplate.execute(createEmployeesSql);
         return RepeatStatus.FINISHED;
     }
 
     public String fileAsString() throws IOException {
-        try (Reader reader = new InputStreamReader(this.resource.getInputStream(), StandardCharsets.UTF_8)) {
+        try (Reader reader = new InputStreamReader(this.getResource().getInputStream(), StandardCharsets.UTF_8)) {
             return FileCopyUtils.copyToString(reader);
         }
+    }
+
+    public Resource getResource() {
+        return resource;
     }
 }

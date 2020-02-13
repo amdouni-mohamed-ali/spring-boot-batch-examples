@@ -4,6 +4,7 @@ import com.spring.tutorial.examples.batch.constants.AppConstants;
 import com.spring.tutorial.examples.batch.listeners.StepListener;
 import com.spring.tutorial.examples.batch.steps.CheckEmployeeTableExistence;
 import com.spring.tutorial.examples.batch.steps.CreateEmployeeTable;
+import com.spring.tutorial.examples.batch.steps.PopulateEmployeeTable;
 import org.springframework.batch.core.Step;
 import org.springframework.batch.core.configuration.annotation.StepBuilderFactory;
 import org.springframework.context.annotation.Bean;
@@ -36,6 +37,16 @@ public class SalaryDepositSteps {
         return stepBuilderFactory
                 .get(AppConstants.CREATE_EMPLOYEES_TABLE)
                 .tasklet(createEmployeeTable)
+                .listener(stepListener)
+                .build();
+    }
+
+    @Bean
+    protected Step populateEmployeesTableStep(PopulateEmployeeTable populateEmployeeTable) {
+
+        return stepBuilderFactory
+                .get(AppConstants.POPULATE_EMPLOYEES_TABLE)
+                .tasklet(populateEmployeeTable)
                 .listener(stepListener)
                 .build();
     }

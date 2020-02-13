@@ -26,7 +26,8 @@ public class SalaryDepositJob {
     @Bean
     protected Job job(
             Step checkEmployeeTableExistenceStep,
-            Step createEmployeesTableStep
+            Step createEmployeesTableStep,
+            Step populateEmployeesTableStep
     ) {
 
         return jobBuilderFactory
@@ -36,6 +37,7 @@ public class SalaryDepositJob {
                 .flow(checkEmployeeTableExistenceStep)
                 .on(ExitStatus.FAILED.getExitCode())
                 .to(createEmployeesTableStep)
+                .next(populateEmployeesTableStep)
 
                 .end()
                 .build();
