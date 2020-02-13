@@ -21,7 +21,7 @@ public class GiveBonusFortunateEmployees extends AbstractStep {
         // get fortunate employees
         int currentMont = LocalDate.now().getMonthValue();
         String monthToUse = currentMont < 10 ? "0" + currentMont : "" + currentMont;
-        String query = "SELECT * FROM employee WHERE birthDate like %?%";
+        String query = "SELECT * FROM employee WHERE birthDate LIKE '%' || ? || '%'";
         List<Employee> employees = getJdbcTemplate().query(
                 query,
                 new Object[]{monthToUse},

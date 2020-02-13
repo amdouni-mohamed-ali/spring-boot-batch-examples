@@ -83,7 +83,7 @@ public class SalaryDepositSteps {
     protected Step lookForFortunateEmployeesStep(LookForFortunateEmployees lookForFortunateEmployees) {
 
         return stepBuilderFactory
-                .get(AppConstants.POPULATE_EMPLOYEES_TABLE)
+                .get(AppConstants.LOOK_FOR_FORTUNATE)
                 .tasklet(lookForFortunateEmployees)
                 .listener(stepListener)
                 .build();

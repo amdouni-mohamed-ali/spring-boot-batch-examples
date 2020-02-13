@@ -22,7 +22,7 @@ public class StepListener extends StepExecutionListenerSupport {
     @Override
     public ExitStatus afterStep(StepExecution stepExecution) {
 
-        LOGGER.info("### Before Step - JOB-ID#{} STEP-ID#{} STEP-NAME#{} : {}", stepExecution.getJobExecution().getJobInstance().getInstanceId(),
+        LOGGER.info("### After Step - JOB-ID#{} STEP-ID#{} STEP-NAME#{} : {}", stepExecution.getJobExecution().getJobInstance().getInstanceId(),
                 stepExecution.getId(), stepExecution.getStepName(), stepExecution.getStatus(), stepExecution.getExitStatus().getExitCode());
 
         return stepExecution.getExitStatus();

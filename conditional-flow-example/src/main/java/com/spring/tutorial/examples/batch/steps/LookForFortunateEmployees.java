@@ -15,7 +15,7 @@ public class LookForFortunateEmployees extends AbstractStep {
 
         int currentMont = LocalDate.now().getMonthValue();
         String monthToUse = currentMont < 10 ? "0" + currentMont : "" + currentMont;
-        String query = "SELECT 1 FROM account WHERE birthDate like %?%";
+        String query = "SELECT distinct 1 FROM employee WHERE birthDate  LIKE '%' || ? || '%'";
         String result = getJdbcTemplate().queryForObject(
                 query,
                 new Object[]{monthToUse},

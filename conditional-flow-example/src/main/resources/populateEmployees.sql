@@ -7,6 +7,6 @@ INSERT INTO employee (id, firstName, lastName, sex, salary, birthDate, entryDate
 INSERT INTO employee (id, firstName, lastName, sex, salary, birthDate, entryDate)
         VALUES (3, 'max', 'DUB', 'M', 0.0, '1993-08-18', '2011-02-07');
 INSERT INTO employee (id, firstName, lastName, sex, salary, birthDate, entryDate, releaseDate)
-        VALUES (4, 'janet', 'JACKSON', 'M', 0.0, '1995-06-18', '2011-02-12', '2020-02-28');
+        VALUES (4, 'janet', 'JACKSON', 'M', 0.0, '1995-02-18', '2011-02-12', '2020-02-28');
 INSERT INTO employee (id, firstName, lastName, sex, salary, birthDate, entryDate)
         VALUES (5, 'leonel', 'TRAVIS', 'M', 0.0, '1995-11-18', '2011-05-22');

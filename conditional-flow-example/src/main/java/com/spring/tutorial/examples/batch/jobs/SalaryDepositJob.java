@@ -27,7 +27,12 @@ public class SalaryDepositJob {
     protected Job job(
             Step checkEmployeeTableExistenceStep,
             Step createEmployeesTableStep,
-            Step populateEmployeesTableStep
+            Step populateEmployeesTableStep,
+            Step displayEmployeesStep,
+            Step distributeBonusToEmployeesStep,
+            Step giveBonusFortunateEmployeesStep,
+            Step lookForFortunateEmployeesStep,
+            Step updateSalaryStep
     ) {
 
         return jobBuilderFactory
@@ -37,7 +42,28 @@ public class SalaryDepositJob {
                 .flow(checkEmployeeTableExistenceStep)
                 .on(ExitStatus.FAILED.getExitCode())
                 .to(createEmployeesTableStep)
-                .next(populateEmployeesTableStep)
+                .from(checkEmployeeTableExistenceStep)
+                .on(ExitStatus.COMPLETED.getExitCode())
+                .to(updateSalaryStep)
+
+                .from(createEmployeesTableStep)
+                .next(populateEmployeesTableStep)   // if the the populate steps fails the job will fails
+                .on(ExitStatus.COMPLETED.getExitCode())
+                .to(updateSalaryStep)
+
+                .from(updateSalaryStep)
+                .next(lookForFortunateEmployeesStep)
+                .on(ExitStatus.FAILED.getExitCode())
+                .to(distributeBonusToEmployeesStep)
+                .from(lookForFortunateEmployeesStep)
+                .on(ExitStatus.COMPLETED.getExitCode())
+                .to(giveBonusFortunateEmployeesStep)
+
+                .from(distributeBonusToEmployeesStep)
+                .next(displayEmployeesStep)
+
+                .from(giveBonusFortunateEmployeesStep)
+                .next(displayEmployeesStep)
 
                 .end()
                 .build();
