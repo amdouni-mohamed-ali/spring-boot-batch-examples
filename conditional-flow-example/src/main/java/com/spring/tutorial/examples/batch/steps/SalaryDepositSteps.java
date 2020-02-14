@@ -1,4 +1,4 @@
-package com.spring.tutorial.examples.batch.jobs;
+package com.spring.tutorial.examples.batch.steps;
 
 import com.spring.tutorial.examples.batch.constants.AppConstants;
 import com.spring.tutorial.examples.batch.listeners.StepListener;
