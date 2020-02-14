@@ -47,7 +47,7 @@ public class SalaryDepositJob {
                 .to(updateSalaryStep)
 
                 .from(createEmployeesTableStep)
-                .next(populateEmployeesTableStep)   // if the the populate steps fails the job will fails
+                .next(populateEmployeesTableStep)   // if the the populate or the create steps fails the job will fails
                 .on(ExitStatus.COMPLETED.getExitCode())
                 .to(updateSalaryStep)
 

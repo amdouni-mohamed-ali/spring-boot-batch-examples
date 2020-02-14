@@ -1,4 +1,4 @@
-package com.spring.tutorial.examples.batch.steps;
+package com.spring.tutorial.examples.batch.tasklets;
 
 import com.spring.tutorial.examples.batch.Entity.Employee;
 import com.spring.tutorial.examples.batch.constants.AppConstants;
@@ -9,23 +9,27 @@ import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.stereotype.Component;
 import org.springframework.util.Assert;
 
+import java.time.LocalDate;
 import java.util.List;
 
 @Component
-public class DistributeBonusToEmployees extends AbstractStep {
-
+public class GiveBonusFortunateEmployees extends AbstractStep {
 
     @Override
     public RepeatStatus execute(StepContribution stepContribution, ChunkContext chunkContext) {
 
-        // get all employees
-        String query = "SELECT * FROM employee";
+        // get fortunate employees
+        int currentMont = LocalDate.now().getMonthValue();
+        String monthToUse = currentMont < 10 ? "0" + currentMont : "" + currentMont;
+        String query = "SELECT * FROM employee WHERE birthDate LIKE '%' || ? || '%'";
         List<Employee> employees = getJdbcTemplate().query(
                 query,
+                new Object[]{monthToUse},
                 new BeanPropertyRowMapper<>(Employee.class)
         );
+        employees.forEach(employee -> logger.debug("Fortunate employee : {}", employee));
 
-        Assert.notEmpty(employees, "the list of employees cannot be empty");
+        Assert.notEmpty(employees, "fortunate employees list cannot be empty");
         double bonus = AppConstants.BONUS / employees.size();
 
         // update salary
