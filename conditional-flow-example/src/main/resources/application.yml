@@ -1,0 +1,16 @@
+spring:
+  batch:
+    job:
+      enabled: true
+    datasource:
+      url: jdbc:h2:file:/tmp/h2/conditional;DB_CLOSE_ON_EXIT=FALSE;DB_CLOSE_DELAY=-1
+      # this is a file and not an in memory url. to change this behavior use : jdbc:h2:mem:testdb
+      driverClassName: org.h2.Driver
+      username: sa
+      password:
+
+logging:
+  level:
+    root: FATAL
+    org.springframework: WARN
+    com.spring.tutorial: DEBUG

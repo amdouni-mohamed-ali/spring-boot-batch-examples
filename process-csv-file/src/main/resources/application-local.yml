@@ -1,0 +1,7 @@
+batch:
+  in-file: /tmp/input_example
+  output-file: /tmp/output_example
+logging:
+  level:
+    org.springframework: ERROR
+    org.spring.tutorial.examples.batch: TRACE

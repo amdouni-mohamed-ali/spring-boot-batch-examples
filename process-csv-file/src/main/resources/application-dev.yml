@@ -1,0 +1,7 @@
+batch:
+  in-file: D:/tmp/company05112018.csv
+  output-file: D:/tmp/generated_employee.csv
+logging:
+  level:
+    org.springframework: ERROR
+    org.spring.tutorial.examples.batch: INFO

@@ -12,16 +12,34 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>1.5.10.RELEASE</version>
+        <!-- it's not a good idea to bind the project to the spring boot parent -->
     </parent>
 
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+    </properties>
+
     <modules>
-        <module>java-config-example</module>
-        <module>java-config-example-1</module>
-        <module>java-config-example-2</module>
-        <module>java-config-multiple-datasources</module>
-        <module>java-config-sheduler</module>
+        <module>chunk-oriented-processing</module>
+        <module>process-database-data</module>
+        <module>tasklet-listener-example</module>
+        <module>process-csv-file</module>
+        <module>abstract-job-step-example</module>
+        <module>multiple-datasources-example</module>
+        <module>scheduler-example</module>
+        <module>conditional-flow-example</module>
     </modules>
     <packaging>pom</packaging>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

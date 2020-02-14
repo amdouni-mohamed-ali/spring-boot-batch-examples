@@ -1,0 +1,38 @@
+version: "3.3"
+
+services:
+  spring-app:
+    container_name: spring-app
+    build: .
+    environment:
+      POSTGRES_HOST: postgres
+    ports:
+      - 8080:8080
+    depends_on:
+      - postgres
+
+  postgres:
+    container_name: postgres
+    image: postgres:9.6.9
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: db
+      PGDATA: /data/postgres
+    volumes:
+      - postgres-volume:/data/postgres
+    command: ["postgres", "-c", "listen_addresses=*"]
+    # as we are on a dev platform we will accept connections from all hosts. make sure to configure you trust pool connections in production
+
+  adminer:
+    container_name: adminer
+    image: adminer
+    restart: unless-stopped
+    ports:
+      - 8000:8080
+    depends_on:
+      - postgres
+
+volumes:
+  postgres-volume:

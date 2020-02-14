@@ -1,0 +1,5 @@
+company_id;company_name;company_type;emp_id;emp_first_name;emp_last_name;emp_sex;emp_salary
+14578;company_1;type_1;2356;David;Walace;M;250.000
+14579;company_2;type_1;2357;Jan;Levinson;F;110.000
+14580;company_1;type_1;1358;Michael;Scott;M;63.000
+14581;company_1;type_1;1359;Kelly;Kapoor;F;71.000
